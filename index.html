@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/misestilos.css">
+    <title>Calculadora simple</title>
 </head>
 <body>
-    
+    <!-- div para el titulo -->
+    <div class="titulo">
+        <h1>Calculadora simple</h1>
+    </div>
+    <div class="calculadora"> <!-- div para gestionar los calculos -->
+        <input id="numero1" type="number" required class="numeros"><br>
+        <span>Sumar</span><input id="suma" type="radio" name="operacion" required>
+        <span>restar</span><input id="resta" type="radio" name="operacion" required>
+        <span>multiplicar</span><input id="multi" type="radio" name="operacion" required>
+        <span>dividir</span><input id="div" type="radio" name="operacion" required><br>
+        <input id="numero2" type="number" required class="numeros"><br>
+        <button id="boton">Calcular</button> 
+        </form>
+    </div>
+    <script src="ejercicio4.js"></script>
 </body>
 </html>
