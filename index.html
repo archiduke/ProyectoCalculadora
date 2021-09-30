@@ -13,15 +13,19 @@
         <h1>Calculadora simple</h1>
     </div>
     <div class="calculadora"> <!-- div para gestionar los calculos -->
-        <input id="numero1" type="number" required class="numeros"><br>
-        <span>Sumar</span><input id="suma" type="radio" name="operacion" required>
-        <span>restar</span><input id="resta" type="radio" name="operacion" required>
-        <span>multiplicar</span><input id="multi" type="radio" name="operacion" required>
-        <span>dividir</span><input id="div" type="radio" name="operacion" required><br>
-        <input id="numero2" type="number" required class="numeros"><br>
-        <button id="boton">Calcular</button> 
-        </form>
+        
+        <input id="numero1" type="text" required class="numeros"><br>
+        <span>Sumar</span><input type="radio" name="operacion" value="suma" id="sumar"> <!-- selectores de operacion -->
+        <span>restar</span><input type="radio" name="operacion" value="resta" id="restar">
+        <span>multiplicar</span><input type="radio" name="operacion" value="multi" id="multiplicar">
+        <span>dividir</span><input type="radio" name="operacion" value="divi" id="dividir"><br>
+        <input id="numero2" type="text" required class="numeros"><br>
+        <button id="boton">Calcular</button>
+        
     </div>
-    <script src="ejercicio4.js"></script>
+    <div class="resultado"> <!-- aqui mostraremos la solución -->
+        <p id="solucion"></p>
+    </div>
+    <script src="js/js_index.js"></script>
 </body>
 </html>
